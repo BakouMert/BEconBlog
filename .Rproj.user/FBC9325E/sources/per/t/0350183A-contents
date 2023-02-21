@@ -1,0 +1,38 @@
+---
+title: "Progressieve inkomensbelastingen in België"
+author: "Bakou Mertens"
+date: "01/03/2023"
+categories: [Analyse, België, Ongelijkheid]
+
+title-block-banner: true
+
+page-layout: full
+description: Wat zijn progressieve belastingen, hoe werkt het systeem vandaag in België en buurlanden en hoe ging het er vroeger aan toe? Een definitie, internationale vergelijking en historische contextualisering van de Belgische inkomensbelasting. 
+fields: [date, title, author, description]
+---
+
+# Wat betekent progressief?
+Wie meer verdient, houdt altijd meer over, huidige schalen
+# Hoe progressief is België vandaag?
+vergelijking marginale belasting doorheen de tijd + buurlanden + effectieve belastingsdruk
+# Wat als?
+Maak een simulatie van belgische samenleving, rnorm 1000 individuen met ongeveer echte verdeling zodat gini overeenkomt. Dan creëer je een aantal historische belastingsschalen en de huidige en zie je het effect op de ongelijkheid door de effectieve beastingsvoet te vergelijken tussen bv top 1 percent middle 40 en bottom 50, maar ook naar top 0.01% bv
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+library(data.table)
+
+x <- (data.frame(rchisq(10000, 3))+data.frame(rchisq(10000, 7))*data.frame(rchisq(10000, 9.5))/2+rf(10000,2,11)*70)*15.986/56.546
+colnames(x) <- "sim"
+summary(x)
+
+```
+
+Dit komt heel dicht in de buurt van reële waarden in 2019 volgens statbel: p25: 15.986 mediaan: 25.475 gem: 34.173 p75: 42.124
+
+```{r}
+x %>% mutate(cutoff = fifelse(sim>80, 80, sim)) %>% ggplot(aes(cutoff)) + geom_histogram(binwidth= 2) 
+```
+should look more like normal distribution in the middle, but with much flatter and longer tails. Such that mean and median and 3th quartile don't change, but 
+

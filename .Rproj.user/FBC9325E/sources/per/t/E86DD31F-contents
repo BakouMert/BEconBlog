@@ -1,0 +1,26 @@
+---
+title: "Welkom op de BEconBlog van de Kritische BEconomen"
+author: "Bakou Mertens & Arthur Jacobs"
+date: "2023-01-29"
+categories: [België]
+
+title-block-banner: true
+
+page-layout: full
+description: hghf
+fields: [date, title, author, description]
+---
+
+# Wij leren iets bij en willen dat graag delen
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.
+
+## Merriweather
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. \*\*Aliquam feugiat dictum bibendum.\*\* Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. \[Fusce luctus\](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/\_variables.scss) porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.
+
+### 3 - Code
+
+![](thumbnail.jpg)
+
+Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.

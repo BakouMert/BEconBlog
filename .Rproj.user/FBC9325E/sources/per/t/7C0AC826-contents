@@ -1,0 +1,48 @@
+project:
+  type: website
+
+website:
+  title: "De Kritische BEconomen"
+  body-header: ""
+  navbar: 
+    left: 
+      - text: BEconBlog
+        href: index.qmd
+      - text: Over ons
+        href: about.qmd
+      - text: Onderzoek vertaald
+        href: onderzoek.qmd
+    right: 
+      - icon: twitter
+        href: https://twitter.com/BakouMertens     
+      - icon: envelope-at
+        href: mailto:bakou.mertens@ugent.be
+      - icon: github
+        href: https://github.com/BakouMert
+  search: 
+    location: navbar
+    type: textbox
+  page-footer: 
+    center: |
+      Economisch, kritisch, en Belgisch 
+    left: |
+      Website gemaakt door Bakou in Quarto (RStudio)
+    right: |
+      [Contacteer ons](mailto:bakou.mertens@ugent.be) |
+      [volg ons](https://twitter.com/BakouMertens) |
+      [Code voor website](https://github.com/BakouMert)
+    background: "#f3969a"
+format:
+  html:
+    theme: 
+      dark: [minty, theme_dark_custom.css]
+      light: minty
+      
+      
+
+
+      
+    css: styles.css
+      
+editor: visual
+

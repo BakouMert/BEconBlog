@@ -1,0 +1,23 @@
+---
+title: "Wat weten we over de vermogensongelijkheid in België"
+
+author: "Bakou Mertens"
+
+date: "2023-02-03"
+
+fields: [date, title, author, description]
+
+title-block-banner: true
+
+page-layout: full
+
+categories: [Analyse, België, Ongelijkheid]
+description: In deze blog lees je wat we weten over de vermogensongelijkheid in België. Helaas hebben wij, in tegenstelling tot andere landen, geen vermogenskadaster. We hebben dus geen officiële cijfers over de verdeling van de Belgische vermogens. We kunnen deze echter wel inschatten op basis van indirecte gegevens en surveys. Wij doen hier een poging om de bestaande gegevens bijeen te brengen. 
+
+sort: "date desc"
+
+listing: 
+  contents: posts/Vermogensongelijkheid
+---
+
+

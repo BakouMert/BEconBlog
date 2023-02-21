@@ -1,0 +1,17 @@
+---
+title: "Wat doet een onderzoeker in de economie?"
+
+subtitle: "Een sneak peek in het onderzoek van collega's"
+
+description: Gedurende de vier jaar van je doctoraat bijt een onderzoeker zich vast in een onderwerp, leert inhoudelijk en technisch enorm veel bij en wordt licht depressief. Maar al te vaak wordt interessant onderzoek door bijna niemand gelezen, in deze rubriek proberen we daar iets aan te doen door collega doctorandi de kans te geven hun onderzoek kort en krachtig uit te leggen. 
+listing:
+  contents: onderzoek/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  fields: [title, author, date, description, categories]
+page-layout: full
+title-block-banner: true
+---

@@ -1,0 +1,29 @@
+[
+  {
+    "listing": "/Apps.html",
+    "items": [
+      "/apps/HFCS.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/OngelijkheidHFCS/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/not_yet_posts/Vermogensongelijkheid/index.html",
+    "items": []
+  },
+  {
+    "listing": "/onderzoek.html",
+    "items": [
+      "/onderzoek/bakou.html"
+    ]
+  },
+  {
+    "listing": "/posts/OngelijkheidHFCS/index.html",
+    "items": []
+  }
+]

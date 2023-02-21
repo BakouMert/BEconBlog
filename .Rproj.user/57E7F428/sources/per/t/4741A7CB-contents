@@ -1,0 +1,27 @@
+
+---
+title: "Genereer grafieken over de Belgische inkomens- en vermogensongelijkheid"
+author: "Bakou Mertens"
+date: "2023-02-21"
+date-modified: "2023-02-21"
+categories: [ongelijkheid, app, HFCS]
+
+title-block-banner: true
+
+page-layout: full
+description: Met deze app kun je zelf grafieken genereren op basis van de nieuwste data over de Belgische inkomens- en vermogensongelijkheid. Hieronder zal ik ook uitleggen hoe de app is gemaakt. Suggesties om deze code te verbeteren altijd welkom!
+fields: [date, title, author, description]
+---
+ 
+# Scoop: nieuwste data over ongelijkheid in België!
+
+Wil je weten hoe het bezit van aandelen, spaargeld of tweede verblijven is verdeeld over de Belgische bevolking? Of ben je meer geïnteresseerd in hoeveel vastgoedvermogen de rijkste Belgen gemiddeld bezitten, in hoe inkomen uit financiëel vermogen is verdeeld of in het spaargeld van de top 1% ?
+
+Het kan allemaal, maak hier zelf grafieken over de ongelijkheid in België, download ze en verspreid uw verontwaardiging over de staat van de ongelijkheid. Kies zelf uw variabele, rangschik de bevolking op basis van inkomen, vermogen of aandelen en splits ze op in percentielen of decielen, en hop, je krijgt een grafiek te zien gebaseerd op de nieuwste data van de Eurosystem HFCS survey voor België, een driejaarlijkse bevraging van de Europese Centrale Bank. Klik [hier](https://beconblog.quarto.pub/posts/OngelijkheidHFCS/) voor onze eerste indrukken en meer informatie.
+
+```{=html}
+ <iframe id="NEW" src="https://bakoumertens.shinyapps.io/HFCS/" style="border: none; width: 100%; height: 550px; overflow:auto" frameborder="0"></iframe>
+```
+
+#  Stap voor stap: hoe heb ik deze app gemaakt?
+coming soon...

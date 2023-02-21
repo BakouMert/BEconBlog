@@ -1,0 +1,50 @@
+{
+  "index.qmd": {
+    "index.html": "94e533ec"
+  },
+  "about.qmd": {
+    "about.html": "37942911"
+  },
+  "posts/België/Index.qmd": {
+    "Index.html": "976e2de7"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "687702c9"
+  },
+  "posts/Vermogensongelijkheid/index.qmd": {
+    "index.html": "7b93e115"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "b66994d0"
+  },
+  "posts/Inkomensbelasting/index.qmd": {
+    "index.html": "6f28fbe8"
+  },
+  "onderzoek/bakou.qmd": {
+    "bakou.html": "6a29721b"
+  },
+  "onderzoek.qmd": {
+    "onderzoek.html": "f016c3e1"
+  },
+  "posts/EarningCall2022/EarningCall2022.qmd": {
+    "EarningCall2022.html": "ba58fd4c"
+  },
+  "posts/OngelijkheidHFCS/index.qmd": {
+    "index.html": "9396b71d"
+  },
+  "not_yet_posts/EarningCall2022/EarningCall2022.qmd": {
+    "EarningCall2022.html": "04127568"
+  },
+  "not_yet_posts/Inkomensbelasting/index.qmd": {
+    "index.html": "f6c7bd98"
+  },
+  "not_yet_posts/Vermogensongelijkheid/index.qmd": {
+    "index.html": "e3c58f77"
+  },
+  "apps/HFCS.qmd": {
+    "HFCS.html": "e6895bb5"
+  },
+  "Apps.qmd": {
+    "Apps.html": "c1455448"
+  }
+}

@@ -1,0 +1,21 @@
+---
+title: "Analyse van alle Belgischebeursgenoteerde bedrijven"
+
+author: "Bakou Mertens"
+
+date: "2023-01-29"
+
+fields: [date, title, author, description]
+
+title-block-banner: true
+
+page-layout: full
+
+categories: [Analyse, België, Beurs]
+description: In deze blog lees je hoe de verdeling tussen arbeid en kapitaal is geëvolueerd, wat dit heeft te maken met ongelijkheid en hoe investeringen lijden onder de druk van de korte termijn aandeelhouderswaarde.
+
+sort: "date desc"
+
+listing: 
+  contents: posts/België
+---

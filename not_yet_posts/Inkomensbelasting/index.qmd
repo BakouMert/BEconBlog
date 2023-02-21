@@ -1,0 +1,93 @@
+---
+title: "Progressieve inkomensbelastingen in België"
+author: "Bakou Mertens"
+date: "01/03/2023"
+categories: [Analyse, België, Ongelijkheid]
+
+title-block-banner: true
+
+page-layout: full
+description: Wat zijn progressieve belastingen, hoe werkt het systeem vandaag in België en buurlanden en hoe ging het er vroeger aan toe? Een definitie, internationale vergelijking en historische contextualisering van de Belgische inkomensbelasting. 
+fields: [date, title, author, description]
+execute:
+  echo: false
+  warning: false
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+theme_bakou <- function(font = "serif" , fs_title = 18, fs_subtitle= 18, fs_ax_leg = 17) {
+  
+  theme_classic() + theme(
+    axis.line = element_blank(),
+    axis.text = element_text(family = font, size = fs_ax_leg),
+    axis.text.x = element_blank(),
+    axis.title.x = element_text(family = font, size = fs_ax_leg),
+    axis.ticks.x = element_blank(),
+    legend.text = element_text(family = font,size=fs_ax_leg),
+    legend.title = element_text(family = font,size=fs_ax_leg),
+    legend.position = "none",
+    strip.background = element_blank(),
+    plot.title = element_text( family = font, size = fs_title, face = 'italic'), 
+    plot.subtitle = element_text(family = font, size=fs_subtitle, margin=  margin(l=-50) ),
+    panel.grid.major.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.minor.y = element_blank(),    
+    
+  )
+}
+income_tax <- function(income, brackets, rates) {
+  
+  sum(diff(c(0,pmin(income, brackets)))*rates)
+} 
+```
+
+Ongelijkheid is het laatste decennium een hot topic geworden, zowel in het maatschappelijk debat als in de economische wetenschap. Met zijn baanbrekende werk heeft Thomas Piketty dit belangrijk thema op de kaart gezet. Hij heeft ons doen inzien dat de ongelijkheid in de meeste Westerse landen sinds de jaren '80 weer is toegenomen en sindsdien hebben veel onderzoeken de schadelijke maatschappelijke consequenties van ongelijkheid aangetoond, zowel voor de sociale cohesie, de democratie als de economie. Ongelijkheid is brandend actueel, en hoewel de werkelijke ongelijkheid door burgers stevig wordt onderschat, ze roept bij de meeste mensen verontwaardiging op. Ongelijkheid beroert dus de gemoederen. Maar ongelijkheid hangt onherroepelijk samen met een ander, net iets minder sexy, topic: belastingen. Weinig mensen betalen hem graag, maar de personenbelasting, of inkomensbelasting, is een cruciaal instrument voor onze welvaart.
+
+# Wat betekent progressief?
+
+Je kunt als staat het inkomen van je burgers op verschillende manieren belasten. Iedereen zou bv hetzelfde bedrag kunnen betalen, bv 10.000 euro. Een dergelijke belasting zou *regressief* zijn. Veroudingsgewijs betaalt een persson met een laag inkomen namelijk veel meer belastingen dan een persoon met een hoog inkomen. Het systeem is regressief omdat de ongelijkheid na de belasting groter is dan ervoor. Een tweede soort belasting zou een vast percentage van ieders inkomen kunnen afromen, bv 20%. Hoe hoger je inkomen, hoe meer je betaalt. En toch blijft de ongelijkheid na de belasting gelijk. Deze belasting is dus niet regressief, maar ook niet progressief, ondanks het feit dat de hogere inkomens in absolute cijfers meer belastingen btalen. Een systeem is pas progressief wanneer de hogere inkomens ook procentueel meer afdragen aan de staatskas. België kent zo'n progressief belastingssysteem, maar hoe werkt het precies?
+
+### De Belgische inkomensbelasting vandaag
+
+Je hoort mensen vaak klagen dat in België hard werken wordt gestraft, dat je beter niet te veel moet verdienen omdat je anders in een hogere belastingsschaal terechtkomt en meer moet betalen.En inderdaad, een progressief systeem van inkomensbelasting is een belastingstelsel waarbij hogere inkomens een hoger percentage van hun inkomen betalen dan lagere inkomens. Hoe hoger het inkomen van een persoon is, hoe hoger het belastingtarief is dat zij moeten betalen. Maar het hardnekkige idee dat je door meer te verdienen, meer moet betalen en daardoor minder overhoudt, dat is een mythe. **Wie meer verdient houdt op het einde van de rit altijd meer over.** Wie van 41.360 inkomen ineens naar 41.361 euro gaat, en dus springt naar de hoogste belastingsschaal, betaalt door die overgang exact 50 eurocent meer. Enkel die laatste euro wordt namelijk belast aan het toptarief van 50% , en niet het volledige inkomen. Het hoogste belastingstarief in België bedraagt dus 50%, maar geen enkele werknemer betaalt dus 50% van zijn of haar inkomen aan inkomensbelastingen. Bovendien bestaat er een belastingsvrije som van 9.050 euro. Dit betekent dat de eerste 9.050 euro niet belast worden, en dus eerst moeten worden afgetrokken voordat de onderstaande belastingsschijven worden toegepast.
+
+| Inkomensschijf                  | Tarief |
+|---------------------------------|--------|
+| Van 0,01 euro tot 13.540 euro   | 25 %   |
+| Van 13.540 euro tot 23.900 euro | 40 %   |
+| Van 23.900 euro tot 41.360 euro | 45 %   |
+| Meer dan 41.360 euro            | 50 %   |
+
+: Inkomensbelasting in België, 2022
+
+### Toptarief van 50%, is dat veel?
+
+Dit tarief is redelijk gelijkaardig aan het geldende tarief in andere Westerse landen (met uitzondering van Oost-Europa, waar vaak een zeer lage en weinig progressieve inkomensbelasting geldt). In historisch perspectief is dit tarief echter zeer laag, zoals blijkt uit de figuur hieronder. Opnieuw dankzij Piketty, werd onze aandacht gevestigd op de daling van deze marginale toptarieven in landen zoals de Verenigde Staten en het Verenigd Koninkrijk. Daar kenden ze tarieven van wel 95%, wat betekent dat vanaf een bepaalde inkomensgrens, elke bijkomende euro bijna volledig naar de staatskas ging.
+
+![Belastingtarief op hoogste inkomens was na WOII ontzettend hoog maar is vanaf de jaren '80 sterk verlaagd](Piketty_top_income.png)
+
+### De VS in 1963, een de facto inkomensgrens
+
+Een dergelijke quasi-confiscatie van het inkomen installeert de facto een inkomensgrens, en dus reduceert niet alleen de ongelijkheid na belastingen, maar ook de ongelijkheid voor belastingen, aangezien het geen zin heeft om meer te verdienen dan die grens. In 1963[^1] kende de Verenigde Staten een marginaal toptarief van 91% op alle inkomens - omgerekend[^2] naar prijzen van vandaag boven de 3,4 miljoen dollar -, 90% op all inkomens boven de 2,6 mijoen, 89% op alles boven de 1,7 miljoen, enz.Je ziet in @Plot_VS_1963 dat het inkomen na belastingen in het Amerika van 1963 vanaf een bepaalde inkomensgrens sterk wordt afgevlakt het Belgische systeem dat niet doet. Wie 20 miljoen "verdient", betaalde in het Amerika van 1963 `r round(income_tax(20000000, brackets= c( 34000,68800, 103200,137600 ,172000,206400,240800,275200 , 309600 ,344000 , 378400, 447200,550400 ,653600 , 756800 ,860000 , 1032000, 1204000 ,1376000 , 1548000 , 1720000, 2580000 , 3440000 , 17000000), rates = c(0.2,0.22,0.26,0.3,0.34,0.38,0.43,0.47,0.5,0.53,0.56,0.59,0.62,0.65,0.69,0.72,0.75,0.78,0.81,0.84,0.87,0.89,0.9,0.91))/1000000)`miljoen en betaalt vandaag in België `r round(income_tax(20000000, brackets=  c(9050, 13450,23900, 41360,17000000), rates= c(0,0.25, 0.4,0.45,0.5))/1000000)`miljoen. Dat is best opvallend, maar niet per se relevant voor België. We weten nu dat in verschillende landen de hoogste tarieven van de inkomensbelasting drastisch zijn verlaagd over de laatste decennia, en dat dit de ongelijkheid voor en na belastingen in de hand heeft gewerkt, maar hoe zit het met de geschiedenis van de Belgische marginale toptarieven? Kenden wij in België ook zo hoge marginale tarieven?
+
+[^1]: Data voor de belastingsschalen en tarieven in de VS [hier](https://taxfoundation.org/historical-income-tax-rates-brackets/)
+
+[^2]: Aanpassing aan inflatie via de Bureau of Labor Statistics, [hier](https://www.bls.gov/data/inflation_calculator.htm)
+
+```{r }
+#| label: Plot_VS_1963
+#| fig-cap: "Progressievere belastingen in de Verenigde Staten van 1963 dan in België vandaag"
+
+data.frame(income = c(50000, 100000, 200000, 400000, 600000, 800000, 1000000, 1200000, 1400000, 1600000, 3200000, 6400000,9600000, 12800000,16000000 )) %>% rowwise() %>% mutate(tax_VS = income_tax(income, brackets= c( 34000,68800, 103200,137600 ,172000,206400,240800,275200 , 309600 ,344000 , 378400, 447200,550400 ,653600 , 756800 ,860000 , 1032000, 1204000 ,1376000 , 1548000 , 1720000, 2580000 , 3440000 , 17000000), rates = c(0.2,0.22,0.26,0.3,0.34,0.38,0.43,0.47,0.5,0.53,0.56,0.59,0.62,0.65,0.69,0.72,0.75,0.78,0.81,0.84,0.87,0.89,0.9,0.91)), tax_BE = income_tax(income, brackets = c(9050, 13450,23900, 41360,17000000), rates= c(0,0.25, 0.4,0.45,0.5)) , income_after_tax_VS = income - tax_VS, income_after_tax_BE = income-tax_BE )  %>% ggplot(aes(x= income)) + geom_point(aes(y= income_after_tax_BE), color= "#c61361", size= 3, alpha=0.7 ) + geom_point(aes(y=income_after_tax_VS), color= "#25a88e", size=3, alpha=0.5) + theme_bakou(fs_title = 16, fs_subtitle = 13, fs_ax_leg = 13) + theme(axis.text.x= element_text()) +  coord_cartesian(xlim=c(0,3200000), ylim=c(0,1800000)) + scale_x_continuous(breaks= c(100000, 500000, 1000000, 3000000), labels = scales::dollar_format(scale=0.000001, prefix = "$", suffix=" \nmilj." ))+ scale_y_continuous(breaks= c(100000, 500000, 1000000, 1800000),labels = scales::dollar_format(scale=0.000001, prefix = "$", suffix=" \nmilj." ))  + labs(x= "Inkomen voor belasting", y= NULL, title="Belasting op hoge inkomens \nin België vandaag versus in de VS in 1963", subtitle= "Inkomen \nna belastigen" ,caption = "Website: https://beconblog.quarto.pub/ \n") + annotate(geom="text", x= 2500000, y= 700000, label= "VS in 1963", color= "#25a88e") + annotate(geom="text", x= 2500000, y= 1520000, label= "België vandaag", color= "#c61361")
+```
+
+# De top marginale inkomensbelasting in België over de tijd
+
+### Het systeem van 1988 vergeleken met dat van vandaag
+
+### Welk effect op ongelijkheid
+
+# Conclusies

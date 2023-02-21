@@ -1,0 +1,43 @@
+---
+title: "The BEconBlog"
+
+subtitle: "Economisch, kritisch en Belgisch"
+
+description: Een kritische kijk op de economische actualiteit of een korte analyse over een hot topic, op de BEconBlog kun je terecht voor inzichten en verontwaardiging over de economie. Economische berichtgeving bestendigt vaak het status quo en is dus blind voor alternatieven. Wij proberen aan de hand van korte analyses en data het economisch denkbare te verruimen, bestaande onrechtvaardigheden aan te kaarten en het economische debat te stimuleren. De economie is te belangrijk om over te laten aan de gekende apologeten van de vrije markt, van belangengroepen zoals het VBO tot "onpartijdige" vermogensberheerders. Economische analyses zonder onderliggend winstbejag, duiding met een kritische reflex en Belgisch met een oog op de wereld, welkom bij de blog van de Kritische BEconomen! 
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  fields: [title, author, date, description, categories, image]
+page-layout: full
+title-block-banner: true
+---
+
+::: columns
+::: {.column width="60%"}
+### Coming soon
+
+1.  De geschiedenis van de Belgische progressieve inkomensbelasting (op 6 April) ***PRIMEUR***
+
+2.  Crisis? Niet voor iedereen. Een overzicht van de resultaten van de Belgische beursgenoteerde bedrijven (Maart)
+
+3.  Geschiedenis van de arbeidsduurverkorting in België
+
+4.  Pensioenhervorming in Frankrijk, een primer.
+
+5.  Erfenissen en de erfbelasting.
+
+6.  ... iets van jouw hand?
+:::
+
+::: {.column width="40%"}
+### Krijg af en toe een kritisch economisch inzicht in je mailbox
+
+<iframe src="https://embeds.beehiiv.com/20ab4315-ba58-43ab-83c2-349304f911e1?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;">
+
+</iframe>
+:::
+:::

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Bakou Mertens &amp; Arthur Jacobs">
+<meta name="dcterms.date" content="2023-02-13">
+<meta name="description" content="In deze blog lees je onze eerste indrukken over de nieuwste ongelijkheidsdata in België.">
+
+<title>De Kritische BEconomen - Een korte analyse van de nieuwste gegevens over de Begische inkomens- en vermogensongelijkheid</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">De Kritische BEconomen</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">BEconBlog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">Over ons</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../onderzoek.html">
+ <span class="menu-text">Onderzoek vertaald</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Apps.html">
+ <span class="menu-text">Apps</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/BakouMertens"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:bakou.mertens@ugent.be"><i class="bi bi-envelope-at" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/BakouMert"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Een korte analyse van de nieuwste gegevens over de Begische inkomens- en vermogensongelijkheid</h1>
+                  <div>
+        <div class="description">
+          In deze blog lees je onze eerste indrukken over de nieuwste ongelijkheidsdata in België.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Analyse</div>
+                <div class="quarto-category">België</div>
+                <div class="quarto-category">Ongelijkheid</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Bakou Mertens &amp; Arthur Jacobs </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 13, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#geen-goede-cijfers-in-belgië" id="toc-geen-goede-cijfers-in-belgië" class="nav-link active" data-scroll-target="#geen-goede-cijfers-in-belgië">Geen goede cijfers in België</a></li>
+  <li><a href="#nieuwste-data-uit-bevraging-door-ecb" id="toc-nieuwste-data-uit-bevraging-door-ecb" class="nav-link" data-scroll-target="#nieuwste-data-uit-bevraging-door-ecb">Nieuwste data uit bevraging door ECB</a>
+  <ul class="collapse">
+  <li><a href="#onderschatting-van-de-realiteit" id="toc-onderschatting-van-de-realiteit" class="nav-link" data-scroll-target="#onderschatting-van-de-realiteit">Onderschatting van de realiteit</a></li>
+  </ul></li>
+  <li><a href="#financiëel-kapitaal-versus-vastgoed" id="toc-financiëel-kapitaal-versus-vastgoed" class="nav-link" data-scroll-target="#financiëel-kapitaal-versus-vastgoed">Financiëel kapitaal versus vastgoed</a>
+  <ul class="collapse">
+  <li><a href="#de-kleine-spaarder-met-zijn-tweedeverblijf" id="toc-de-kleine-spaarder-met-zijn-tweedeverblijf" class="nav-link" data-scroll-target="#de-kleine-spaarder-met-zijn-tweedeverblijf">De Kleine spaarder met zijn tweedeverblijf?</a></li>
+  </ul></li>
+  <li><a href="#hoge-mate-van-overlap-aan-de-top" id="toc-hoge-mate-van-overlap-aan-de-top" class="nav-link" data-scroll-target="#hoge-mate-van-overlap-aan-de-top">Hoge mate van overlap aan de top</a></li>
+  <li><a href="#kanttekeningen-en-conclusie" id="toc-kanttekeningen-en-conclusie" class="nav-link" data-scroll-target="#kanttekeningen-en-conclusie">Kanttekeningen en conclusie</a></li>
+  <li><a href="#vragen-en-feedback" id="toc-vragen-en-feedback" class="nav-link" data-scroll-target="#vragen-en-feedback">Vragen en feedback</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+<p>Wil je weten hoe het bezit van aandelen, spaargeld of tweede verblijven is verdeeld over de Belgische bevolking? Of eerder benieuwd naar welke inkomensgroep vooral dure auto’s bezit? Of ben je meer geïnteresseerd hoeveel vastgoedvermogen de rijkste Belgen gemiddeld bezitten? Je kan het allemaal te weten komen: visualiseer zelf de ongelijkheid in België aan de hand van deze online tool. Kies zelf uw variabele en rangschik de bevolking op basis van inkomen, vermogen of aandelenbezit. En hop, je krijgt een grafiek te zien gebaseerd op de nieuwste data van de HFCS-enquête voor België. Je kan de grafiek ook downloaden en delen om zo uw verontwaardiging over de staat van de ongelijkheid te verspreiden.</p>
+<section id="geen-goede-cijfers-in-belgië" class="level1">
+<h1>Geen goede cijfers in België</h1>
+<p>We hebben in België geen goede cijfers over ongelijkheid. Het maandelijkse magazine SamPol wijdde in januari een uiterst interessant <a href="https://sampol.be/magazines/297">nummer</a> aan wat onderzoekers wel en niet weten over de ongelijkheid in België. Er is veel dat we niet weten, zo blijkt. De officiële cijfers over de inkomensongelijkheid zijn een grove een onderschatting van de reële ongelijkheid doordat de inkomsten uit kapitaal niet worden meegerekend. Officiële cijfers over vermogensongelijkheid hebben we al zeker niet aangezien onze politici weigeren een vermogenskadaster op te stellen, althans voor wie geen beroep moet doen op een sociale woning.</p>
+</section>
+<section id="nieuwste-data-uit-bevraging-door-ecb" class="level1">
+<h1>Nieuwste data uit bevraging door ECB</h1>
+ <iframe id="NEW" src="https://bakoumertens.shinyapps.io/HFCS/" style="border: none; width: 100%; height: 550px; overflow:auto" frameborder="0"></iframe>
+<p>Hier brengen we jullie de nieuwste cijfers, vers van de pers, over de inkomens- en vermogensongelijkheid in België. De data komen van de recentste uitvoering van de Household Finance and Consumption Survey (HFCS). Deze enquête werd tussen juli 2020 en juni 2021 door de Nationale Bank afgenomen bij 2130 Belgen en peilt onder andere naar het vermogen en het inkomen van de respondent. De gegevens betreffen het inkomen of vermogen op het niveau van het huishouden, niet het individu. Wij trekken er alvast drie belangrijke lessen uit, maar roepen in de eerste plaats iedereen op om zelf de grafieken te produceren via deze eenvoudige online <a href="https://beconblog.quarto.pub/posts/OngelijkheidHFCS/">tool</a> en deze verder te verspreiden.</p>
+<ol type="1">
+<li><p>Financieel vermogen is veel ongelijker verdeeld dan vastgoed.</p></li>
+<li><p>Tweede verblijven zijn wel degelijk weggelegd voor een selecte groep aan de top.</p></li>
+<li><p>Er is een hoge mate van overlap tussen de positie van een huishouden in de verdeling van inkomen, financieel vermogen en vastgoed.</p></li>
+</ol>
+<section id="onderschatting-van-de-realiteit" class="level3">
+<h3 class="anchored" data-anchor-id="onderschatting-van-de-realiteit">Onderschatting van de realiteit</h3>
+<p>Bedenk hierbij dat de echt grote vissen door een enquête doorgaans niet worden bevraagd. De kans dat uit de 5 miljoen Belgische huishoudens geen van de 500 meest vermogende huishoudens geselecteerd werd voor de enquête is meer dan 80%. Deze heel erg kleine groep meest vermogenden is nochtans erg belangrijk voor de totale vermogensverdeling. Stel bijvoorbeeld dat deze bevraging toevallig de famillies Wittouck, Boël of Frère had behelsd, dan beschikte één huishouden over wel honderd keer meer financieel vermogen dan alle andere huishoudens opgeteld. Deze cijfers geven dus een redelijk conservatief beeld van de reële vermogensongelijkheid in België. Aangezien erg vermogenden meestal ook genieten hoge kapitaalinkomens, is ook de inkomensverdeling in werkelijkheid allicht ongelijker dan wat blijkt uit deze cijfers.</p>
+</section>
+</section>
+<section id="financiëel-kapitaal-versus-vastgoed" class="level1">
+<h1>Financiëel kapitaal versus vastgoed</h1>
+<p>Belgische vermogensongelijkheid wordt gekenmerkt door een redelijk – niet in de ethische, maar in de comparatieve zin - gelijke verdeling van vastgoed. Ongeveer 70% van de huishoudens bezit namelijk een eigen woning, wat in internationaal perspectief zeer hoog is. De zogenaamde baksteen in de maag zorgt voor een vermogensmiddenklasse die in veel andere landen onbestaande is. Toch blijft de vermogensongelijkheid in België aanzienlijk doordat financieel vermogen extreem ongelijk verdeeld is. Zo heeft de rijkste 10% van de Belgische bevolking iets minder dan 60% van de totale financiële rijkdom in handen. Opvallend is dat die groep ongeveer 40% bezit van al het spaargeld, 65% van al het geld belegd in investeringsfondsen en bijn 80% van alle aandelenwaarde. Dus wanneer de Centrale Bank bericht over de vele honderden miljarden aan spaargeld op Belgische bankrekeningen, bedenk dan dat de (qua spaargeld) 1% rijkste huishoudens zo’n 20% van het totale bedrag in handen hebben. Het zijn dus niet zozeer “de Belgen” in hun geheel die slapen op een berg geld, maar eerder een heel kleine groep rijken.</p>
+<div id="fig-vermogen" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-pct1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="realestate.png" class="img-fluid figure-img" data-ref-parent="fig-vermogen"></p>
+<p></p><figcaption class="figure-caption">(a) Vastgoed</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-pct2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="finverm.png" class="img-fluid figure-img" data-ref-parent="fig-vermogen"></p>
+<p></p><figcaption class="figure-caption">(b) Financiëel Vermogen</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Financiëel vermogen versus vastgoed</figcaption><p></p>
+</figure>
+</div>
+<p>In absolute cijfers bezit de top 10% meest vermogenden gemiddeld 800.000 euro aan financieel vermogen, 1.200.000 euro aan vastgoed en nog eens 80.000 euro aan opgebouwde pensioenen (via pensioensparen). Voor de rijkste 1% gaat dit gemiddeld over 3 miljoen financieel vermogen, 2 miljoen aan vastgoed en nog eens 350.000 euro aan pensioenfondsen. <a href="#fig-aandelen">Figure&nbsp;2</a> geeft weer hoe ongelijk aandelen en spaargeld verdeeld zijn over percentielen van de bevolking.</p>
+<p>Opvallend is wel dat deze groep, de rijkste 10%, “slechts” 35% van het totale vastgoedvermogen in handen heeft. Vastgoed is in België dus wel degelijk veel gelijker verdeeld over de bevolking dan financieel vermogen. Ook wanneer je de bevolking rangschikt op basis van de waarde van het totale vastgoed, zoals afgebeeld in <a href="#fig-vermogen">Figure&nbsp;1</a>, blijft de verdeling van vastgoed veel minder extreem dan die van financieel vermogen.</p>
+<div id="fig-aandelen" class="quarto-layout-panel">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-pct3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Aandelen.png" class="img-fluid figure-img" data-ref-parent="fig-aandelen"></p>
+<p></p><figcaption class="figure-caption">(a) Aandelen</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-pct4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="deposits.png" class="img-fluid figure-img" data-ref-parent="fig-aandelen"></p>
+<p></p><figcaption class="figure-caption">(b) Spaargeld</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Financiëel vermogen versus vastgoed</figcaption><p></p>
+</figure>
+</div>
+<section id="de-kleine-spaarder-met-zijn-tweedeverblijf" class="level3">
+<h3 class="anchored" data-anchor-id="de-kleine-spaarder-met-zijn-tweedeverblijf">De Kleine spaarder met zijn tweedeverblijf?</h3>
+<p>Vastgoed is dus redelijk egalitair verdeeld over de bevolking, al mogen we de groep huurders niet uit het oog verliezen. Het gaat om ongeveer 30% van de Belgische bevolking die tot tot de meest kwetsbaren behoren, aangezien ze geen eigen woning hebben om op terug te vallen. Toch is het beeld dat de Bouchez’ van deze wereld graag schetsen, dat van de “kleine spaarder” met een tweede verblijf, niet in overeenstemming met de werkelijkheid. Slechts 22% van de Belgische huishoudens bezit überhaupt (een deel van) een tweede verblijf, en 80% van de totale waarde van tweede verblijven is in handen van 10% van de bevolking. Deze huishoudens zitten bovendien stelselmatig in het hoogste deciel van zowel inkomen, financieel vermogen als vastgoedvermogen. Wie over meer vastgoed beschikt dan enkel de eigen woning, verhuurt deze vaak aan zij die niet over een eigen woning beschikken. Huurgeld stroomt dus van de meest kwetsbaren naar de groep huishoudens helemaal aan de top van de inkomens- en vermogensverdeling. De scherpe stijging (en automatische indexering) van huurgelden van de laatste jaren is in feite een herverdeling van de armsten naar de rijksten, waarbij de top 5% van de huishoudens met een tweede verblijf jaarlijks gemiddeld 30.000 euro huurinkomen verwerven. Inkomen dat in België daarenboven onbelast blijft. Maatregelen die tweede verblijven of reële huurinkomsten trachten te belasten treffen dus voor het overgrote deel niet de “kleine spaarder”, maar wel degelijk de top van de Belgische inkomens- en vermogensverdeling.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="OthHouse.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Tweedeverblijven</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="hoge-mate-van-overlap-aan-de-top" class="level1">
+<h1>Hoge mate van overlap aan de top</h1>
+<p>Een andere belangrijke vraag is in welke mate je positie in de inkomensverdeling samenloopt met je positie in de verdeling van (financieel) vermogen. Het lijkt evident dat de verdelingen grotendeels samenvallen, maar dat is het niet per se. Zo kan een jonge werkne(e)m(st)er met een relatief laag inkomen een grote som geld of vastgoed hebben geërfd, of kan een oudere gepensioneerde beschikken over een appartementje aan zee en een mooie aandelenportefeuille. Beiden zouden een redelijk lage positie innemen in de inkomensverdeling, terwijl ze op vlak van vermogen misschien wel in de hoogste decielen thuis horen. Dergelijke profielen zullen vast en zeker bestaan, maar de vraag is hoe uitzonderlijk ze zijn en in welke mate ze het totaalplaatje domineren. Om dit zelf te achterhalen moet je de variabele op de x-as constant houden, wat betekent dat je de bevolking verdeeld over hokjes (decielen of percentielen) op basis van één welbepaalde variabele, bijvoorbeeld het totale inkomen Wanneer je vervolgens de verdeling van totaal vermogen uiteenzet, kan je nagaan of de functie stijgend verloopt. Zo ja, dan wil dat zeggen dat huishoudens met meer inkomen (meer naar rechts op de x-as) ook een hoger aandeel van het Belgische vermogen bezitten. Dat blijkt inderdaad het geval te zijn.</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: center;">
+<p><img src="graf3.png" class="img-fluid" alt="Inkomen"> <img src="graf1.png" class="img-fluid" alt="Vastgoed"> <img src="graf2.png" class="img-fluid" alt="Financiëel Vermogen"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<p>Verdeling over decielen van het inkomen: overlap aan de top</p>
+</div>
+</div>
+</div>
+</section>
+<section id="kanttekeningen-en-conclusie" class="level1">
+<h1>Kanttekeningen en conclusie</h1>
+<p>Ondanks het gebrek aan effectieve data over ongelijkheid in België, krijgen we aan de hand van enquêtes zoals deze regelmatig een beeld van hoe deze er ongeveer uitziet. Dat beeld correspondeert helaas lang niet perfect met de realiteit. Bij relatief kleine enquêtes als deze komt er altijd een grote mate van onzekerheid aan te pas. Bovendien is de kans op een onderschatting van het vermogen en het inkomen van de rijksten erg groot, Ondanks de uitgesproken beperkingen, geven deze data geven dus wel een goed idee van hoe inkomen, vermogen en hun componenten in België verdeeld zijn. Dat beeld is al bij al vrij genuanceerd en complex. Het kan niet zomaar gevat worden door één grafiek, aangezien het van belang is welke variabele je gebruikt om huishoudens te ordenen. Ook al is er een hoge mate van overlap aan de top van de inkomens- en vermogensdistributie, om een goed beeld te krijgen van de verschillende vormen van ongelijkheid in België moeten verschillende grafieken naast elkaar worden gelegd. Daarvoor is deze tool uitermate geschikt.</p>
+<p>We zullen in andere blogs dieper ingaan op deze data, ze eventueel vergelijken met de vorige twee golven (2014 en 2017) en ze gebruiken om argumenten kracht bij te zetten, maar laten de lezer nu zelf aan de slag gaan. Visualiseer zelf de verschillende vormen van ongelijkheid in België, download de gewenste grafieken en deel ze om zo de kennis over de Belgische ongelijkheid te verspreiden. Wanneer Bouchez of Lachaert dan nog eens claimen om in het belang te handelen van de kleine spaarder met zijn dikke aandelenportefeuille of vele huurinkomsten, kun je die beweringen gemakkelijk counteren met data en grafieken. De data geven duidelijk aan dat, hoewel kleine beleggers wel bestaan, financieel vermogen toch vooral geconcentreerd zit bij een kleine groep heel vermogenden. Elke maatregel die vermogen ten goede komt, heeft dus ook in België heel veel negatieve consequenties wat ongelijkheid betreft.</p>
+</section>
+<section id="vragen-en-feedback" class="level1">
+<h1>Vragen en feedback</h1>
+<p>Heb je vragen of feedback, aarzel dan niet om ons te <a href="mailto:bakou.mertens@ugent.be">contacteren</a>. Wij staan open voor kritiek, gaan graag in discussie en beantwoorden graag eventuele onduidelijkheden! Wil je graag zelf iets schrijven, <a href="mailto:bakou.mertens@ugent.be">contacteer ons!</a></p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
+<div>
+<hr>
+
+<h3> Stay in touch </h3>
+
+<p> Wil je nog wel iets van ons lezen, teken in op onze nieuwsbrief. </p>
+
+<iframe src="https://embeds.beehiiv.com/20ab4315-ba58-43ab-83c2-349304f911e1?slim=true" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
+
+
+<h3> Deel en verspreid de verontaardiging of inspiratie </h3>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-hashtags="#BEconBlog" data-show-count="false">Tweet</a><script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<hr>
+</div>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'alternate';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Website gemaakt door Bakou in Quarto (RStudio)</div>   
+      <div class="nav-footer-center">Economisch, kritisch, en Belgisch</div>
+    <div class="nav-footer-right"><a href="mailto:bakou.mertens@ugent.be">Contacteer ons</a> | <a href="https://twitter.com/BakouMertens">volg ons</a> | <a href="https://github.com/BakouMert">Code voor website</a></div>
+  </div>
+</footer>
+
+
+
+</body></html>

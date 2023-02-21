@@ -1,0 +1,44 @@
+---
+title: "Welkom op de BEconBlog van de Kritische BEconomen"
+author: "Bakou Mertens & Arthur Jacobs"
+date: "2023-02-12"
+categories: [Welkom, Nieuws]
+
+title-block-banner: true
+
+page-layout: full
+description: Een kritisch blog over economie. 
+fields: [date, title, author, description]
+---
+
+# Wij leren iets bij en willen dat graag delen
+
+Wij zijn twee doctoraatstudenten economie aan de Universiteit Gent met een brede interesse in politiek-economische fenomenen, nerds met een passie voor inflatie en ongelijkheid. Met de Kritische BEconomen willen wij proberen belangrijke thema's vanuit ptogressieve hoek op de kaart te brengen om zo het schrale economische debat in België wat te verruimen. Wij zijn geen experts, proberen nuances aan het licht te brengen en we houden al zeker niet krampachtig vast aan onze ideeën. We staan dus zeker open voor feedback, suggesties en kritiek.
+
+Deze blog is voor ons een lagdrempelige manier om te schrijven over interessante economische fenomenen. Wij leren iets bij over de wereld en willen dat graag delen met anderen zodat er een gesprek over kan ontstaan.
+
+## Een blog over economie met een kritische reflex en Belgische focus
+
+Economische berichtgeving in België is redelijk schraal, bestendigt vaak het status quo en is dus blind voor alternatieven. Wij proberen aan de hand van korte analyses en data het economisch denkbare te verruimen, bestaande onrechtvaardigheden aan te kaarten en het economische debat te stimuleren. Wil jij ook je ei kwijt, aarzel dan zeker niet om ons te [contacteren](mailto:bakou.mertens@ugent.be) ! Met een idee, een artikel of interessante data, het is allemaal welkom.
+
+## Laagdrempelig in gesprek over economisch onderzoek
+
+De blog is ook een laagdrempelige manier om over economisch onderzoek te praten. Laagdrempelig zowel voor de onderzoeker - aangezien de blog door bijna niemand wordt gelezen - als voor de lezer - aangezien de onderzoeker poogt jargon uit het stuk te laten en fenomenen goed uit te leggen.
+
+# Welkom op de BEconBlog !
+
+In elk geval, welkom ! Ons eerste artikel staat online, samen met een applicatie waar je zelf grafieken over de Belgische inkomens- en vermogensongelijkheids kunt maken, downloaden en verspreiden.
+
+## Coming soon
+
+We zullen proberen regelmatig iets te schrijven, hopelijk ook met een aantal gastbijdragen. Binnenkort kun je op deze blog iets lezen over:
+
+-   Crisis? Niet voor iedereen. Een kijk op de resultaten van Belgische beursgenoteerde bedrijven en een analyse van wie daarvan profiteert
+
+-   De progressieve inkomensbelasting in België. Wat betekent "progressief" vandaag en in historisch perspectief? Wat is een marginaal tarief en kan je 98% van iemands inkomen afpakken?
+
+-   Een geschiedenis van de arbeidsduurverkorting in België. Strijd en productiviteit.
+
+-   Wat weten we over de vermogensongelijkheid?
+
+-   ...

@@ -1,0 +1,18 @@
+---
+title: "Apps gemaakt in Shiny"
+
+subtitle: "Visualiseer, download en verspreid"
+
+description: R is fantastisch. Je kunt er interactieve apps mee maken en publiceren waarmee lezers zelf aan de slag kunnen gaan. Op deze pagina geven we deze apps mee en zullen ook artikels verschijnen over hoe ze zijn gemaakt, voor zij die geïnteresseerd zijn om ook zelf aan de slag te gaan met R Shiny. Zo hopen we ook bij te dragen aan het verspreiden van nuttige software-skills. De volledige code kun je terugvinden op GitHub 
+listing:
+  contents: apps/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  fields: [title, author, date, description, categories]
+page-layout: full
+title-block-banner: true
+---
+

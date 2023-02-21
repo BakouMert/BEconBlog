@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 14bc11c4-5927-473d-92bb-1a80b69fac73
+      url: 'https://quartopub.com/sites/beconblog/beconblog'

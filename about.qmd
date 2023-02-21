@@ -1,0 +1,34 @@
+---
+title: "The BEconBlog"
+
+description: Economisch, kritisch en Belgisch.
+
+image: profile.jpg
+about:
+  template: solana
+  image: profile.jpg
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/BakouMertens
+    - icon: github
+      text: Github
+      href: https://github.com/BakouMert
+    - icon: envelope-at
+      text: Contact
+      href: mailto:bakou.mertens@ugent.be
+page-layout: full
+title-block-banner: true
+---
+
+Wij zijn twee doctoraatstudenten aan de Universiteit Gent en met de Kritische BEconomen proberen wij het economische debat in België wat te verruimen. Wij zijn geen experts, noch houden we krampachtig vast aan onze ideeën en staan dus zeker open voor feedback, suggesties en kritiek.
+
+Verder willen we graag een platform bieden voor anderen. Moet er jou ook iets van het hart? Wil je stoom aflaten na de zoveelste eenzijdige berichtgeving in de krant? Aarzel zeker niet om ons te contacteren, we geven jouw expertise/frustratie/bijdrage graag een plaatsje!
+
+# Bakou Mertens
+
+# 
+
+# Arthur Jacobs
+
+# 

@@ -1,0 +1,16 @@
+{
+  "hash": "577b76bdc04fced63664f590a97122a7",
+  "result": {
+    "markdown": "---\ntitle: \"Progressieve inkomensbelastingen in België\"\nauthor: \"Bakou Mertens\"\ndate: \"01/03/2023\"\ncategories: [Analyse, België, Ongelijkheid]\n\ntitle-block-banner: true\n\npage-layout: full\ndescription: Wat zijn progressieve belastingen, hoe werkt het systeem vandaag in België en buurlanden en hoe ging het er vroeger aan toe? Een definitie, internationale vergelijking en historische contextualisering van de Belgische inkomensbelasting. \nfields: [date, title, author, description]\n---\n\n\n# Wat betekent progressief?\nWie meer verdient, houdt altijd meer over, huidige schalen\n# Hoe progressief is België vandaag?\nvergelijking marginale belasting doorheen de tijd + buurlanden + effectieve belastingsdruk\n# Wat als?\nMaak een simulatie van belgische samenleving, rnorm 1000 individuen met ongeveer echte verdeling zodat gini overeenkomt. Dan creëer je een aantal historische belastingsschalen en de huidige en zie je het effect op de ongelijkheid door de effectieve beastingsvoet te vergelijken tussen bv top 1 percent middle 40 en bottom 50, maar ook naar top 0.01% bv\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──\n✔ tibble  3.1.8      ✔ dplyr   1.0.10\n✔ tidyr   1.2.1      ✔ stringr 1.5.0 \n✔ readr   2.1.3      ✔ forcats 0.5.2 \n✔ purrr   0.3.5      \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\n```\n:::\n\n```{.r .cell-code}\nlibrary(data.table)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n\nAttaching package: 'data.table'\n\nThe following objects are masked from 'package:dplyr':\n\n    between, first, last\n\nThe following object is masked from 'package:purrr':\n\n    transpose\n```\n:::\n\n```{.r .cell-code}\nx <- (data.frame(rchisq(10000, 3))+data.frame(rchisq(10000, 7))*data.frame(rchisq(10000, 9.5))/2+rf(10000,2,11)*70)*15.986/56.546\ncolnames(x) <- \"sim\"\nsummary(x)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n      sim         \n Min.   :  1.406  \n 1st Qu.: 15.276  \n Median : 25.595  \n Mean   : 34.264  \n 3rd Qu.: 43.164  \n Max.   :492.546  \n```\n:::\n:::\n\n\nDit komt heel dicht in de buurt van reële waarden in 2019 volgens statbel: p25: 15.986 mediaan: 25.475 gem: 34.173 p75: 42.124\n\n\n::: {.cell}\n\n```{.r .cell-code}\nx %>% mutate(cutoff = fifelse(sim>80, 80, sim)) %>% ggplot(aes(cutoff)) + geom_histogram(binwidth= 2) \n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\nshould look more like normal distribution in the middle, but with much flatter and longer tails. Such that mean and median and 3th quartile don't change, but \n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

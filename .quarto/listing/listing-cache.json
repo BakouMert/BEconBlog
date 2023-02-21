@@ -1,0 +1,19 @@
+{
+  "listingMap": {
+    "Apps.qmd": [
+      "apps/**/*.qmd"
+    ],
+    "index.qmd": [
+      "posts/**/*.qmd"
+    ],
+    "not_yet_posts\\Vermogensongelijkheid\\index.qmd": [
+      "posts/Vermogensongelijkheid"
+    ],
+    "onderzoek.qmd": [
+      "onderzoek/**/*.qmd"
+    ],
+    "posts\\OngelijkheidHFCS\\index.qmd": [
+      "posts/OngelijkheidHFCS"
+    ]
+  }
+}

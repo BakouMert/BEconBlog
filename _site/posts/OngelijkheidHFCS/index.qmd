@@ -1,0 +1,21 @@
+---
+title: "Nieuwste gegevens over de Begische ongelijkheid"
+
+author: "Bakou Mertens & Arthur Jacobs"
+
+date: "2023-02-13"
+
+fields: [date, title, author, description]
+
+title-block-banner: true
+
+page-layout: full
+
+categories: [Analyse, België, Ongelijkheid]
+description: In deze blog lees je onze eerste indrukken over de nieuwste ongelijkheidsdata in België. 
+
+sort: "date desc"
+
+listing: 
+  contents: posts/OngelijkheidHFCS
+---

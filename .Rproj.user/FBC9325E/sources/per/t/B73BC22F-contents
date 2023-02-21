@@ -1,0 +1,23 @@
+---
+title: "The BEconBlog"
+
+subtitle: "Economisch, kritisch en Belgisch"
+
+description: Een kritische kijk op de economische actualiteit of een korte analyse over een hot topic, op de BEconBlog kun je terecht voor inzichten en verontwaardiging over de economie. Economische berichtgeving bestendigt vaak het status quo en is dus blind voor alternatieven. Wij proberen aan de hand van korte analyses en data het economisch denkbare te verruimen, bestaande onrechtvaardigheden aan te kaarten en het economische debat te stimuleren. De economie is te belangrijk om over te laten aan de gekende apologeten van de vrije markt, van belangengroepen zoals het VBO tot "onpartijdige" vermogensberheerders. Economische analyses zonder onderliggend winstbejag, duiding met een kritische reflex en Belgisch met een oog op de wereld, welkom bij de blog van de Kritische BEconomen! 
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  fields: [title, author, date, description, categories]
+page-layout: full
+title-block-banner: true
+---
+## Scoop: nieuwste data over ongelijkheid in België!
+Wil je weten hoe het bezit van aandelen, spaargeld of tweede verblijven is verdeeld over de Belgische bevolking? Of eerer beieuwd nar welke inkomensgroep vooral dure auto's bezit? Of ben je meer geïnteresseerd hoeveel vstgoedvermogen de rijkste Belgen gemiddeld bezitten? Het kan allemaal, maak hier zelf grafieken over de ongelijkheid in België, download hem en verspreid uw verontwaardiging over de staat van de ongelijkheid.
+Kies zelf uw variabele, rangschik de bevolking op basis van inkomen, vermogen of aandelen en splits ze op in percentielen of decielen, en hop, je krijgt een grafiek te zien gebaseerd op de nieuwste data van de Eurosystem HFCS survey voor België, een driejaarlijkse bevraging van de Europese Centrale Bank. Klik [hier](OngelijkheidHFCS/index.qmd) voor onze eerste indrukken en meer informatie. 
+```{=html}
+ <iframe id="NEW" src="https://bakoumertens.shinyapps.io/HFCS/" style="border: none; width: 100%; height: 550px; overflow:auto" frameborder="0"></iframe>
+```
